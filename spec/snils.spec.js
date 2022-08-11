@@ -46,6 +46,14 @@ describe("grabAllSNILS", () => {
     let allSNILS = grabAllSNILS("The number is XXX-XXX-XXX 22");
     expect(allSNILS).toBeNull();
   });
+  it('Тест1', () => {
+    let allSNILS = grabAllSNILS(
+      "The numbers are 350-802-074 94"
+    );
+    expect(allSNILS).toEqual([
+      "350-802-074 94"
+    ]);
+  })
 });
 
 describe("hideAllSNILS", () => {
